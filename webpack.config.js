@@ -6,5 +6,17 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'public/javascripts'),
 
+    },
+    module: {
+        rules: [
+            {
+                test: /\.scss$/,
+                use: [
+                  'style-loader',
+                  'css-loader',
+                  'sass-loader',
+                ]
+            }
+        ]
     }
 }

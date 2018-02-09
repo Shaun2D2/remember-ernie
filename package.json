@@ -1,9 +1,9 @@
 {
   "name": "remember-ernie",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "nodemon ./bin/www",
     "build": "webpack"
   },
   "dependencies": {
@@ -12,14 +12,25 @@
     "babel-preset-react": "^6.24.1",
     "body-parser": "~1.18.2",
     "cookie-parser": "~1.4.3",
+    "css-loader": "^0.28.9",
     "debug": "~2.6.9",
     "ejs": "~2.5.7",
     "eslint": "^4.17.0",
     "express": "~4.15.5",
+    "file-loader": "^1.1.6",
     "morgan": "~1.9.0",
+    "nodemon": "^1.14.12",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "serve-favicon": "~2.4.5",
+    "startbootstrap-grayscale": "^4.0.0",
+    "style-loader": "^0.20.1",
+    "url-loader": "^0.6.2",
     "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "img-loader": "^2.0.1",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6"
   }
 }

@@ -1,1 +1,1 @@
-console.log('hello world');
+import 'startbootstrap-grayscale/scss/grayscale.scss';
