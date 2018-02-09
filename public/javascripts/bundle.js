@@ -65,14 +65,16 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_startbootstrap_grayscale_scss_grayscale_scss__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_startbootstrap_grayscale_scss_grayscale_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_startbootstrap_grayscale_scss_grayscale_scss__);
 
 
+__webpack_require__(1);
+
+__webpack_require__(6);
+
+console.log('hello world');
 
 /***/ }),
 /* 1 */
@@ -93,13 +95,13 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(7)(content, options);
+var update = __webpack_require__(4)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(false) {
-	module.hot.accept("!!../../css-loader/index.js!../../sass-loader/lib/loader.js!./grayscale.scss", function() {
-		var newContent = require("!!../../css-loader/index.js!../../sass-loader/lib/loader.js!./grayscale.scss");
+	module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js!./styles.scss", function() {
+		var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js!./styles.scss");
 
 		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 
@@ -128,41 +130,20 @@ if(false) {
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var escape = __webpack_require__(3);
-exports = module.exports = __webpack_require__(4)(false);
+exports = module.exports = __webpack_require__(3)(false);
 // imports
-
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);", ""]);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);", ""]);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);", ""]);
 
 // module
-exports.push([module.i, "body {\n  font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  position: relative;\n  width: 100%;\n  height: 100%;\n  color: white;\n  background-color: black; }\n\nhtml {\n  width: 100%;\n  height: 100%; }\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: 700;\n  margin: 0 0 35px;\n  letter-spacing: 1px;\n  text-transform: uppercase; }\n\np {\n  font-size: 16px;\n  line-height: 1.5;\n  margin: 0 0 25px; }\n  @media (min-width: 768px) {\n    p {\n      font-size: 18px;\n      line-height: 1.6;\n      margin: 0 0 35px; } }\n\na {\n  -webkit-transition: all 0.2s ease-in-out;\n  -moz-transition: all 0.2s ease-in-out;\n  transition: all 0.2s ease-in-out;\n  color: #42DCA3; }\n  a:focus, a:hover {\n    text-decoration: none;\n    color: #1d9b6c; }\n\n#mainNav {\n  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  margin-bottom: 0;\n  text-transform: uppercase;\n  border-bottom: 1px solid rgba(255, 255, 255, 0.3);\n  background-color: black; }\n  #mainNav .navbar-toggler {\n    font-size: 14px;\n    padding: 11px;\n    color: white;\n    border: 1px solid white; }\n  #mainNav .navbar-brand {\n    font-weight: 700; }\n  #mainNav a {\n    color: white; }\n  #mainNav .navbar-nav .nav-item {\n    -webkit-transition: background 0.3s ease-in-out;\n    -moz-transition: background 0.3s ease-in-out;\n    transition: background 0.3s ease-in-out; }\n    #mainNav .navbar-nav .nav-item:hover {\n      color: fade(white, 80%);\n      outline: none;\n      background-color: transparent; }\n    #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {\n      outline: none;\n      background-color: transparent; }\n  @media (min-width: 992px) {\n    #mainNav {\n      padding-top: 20px;\n      padding-bottom: 20px;\n      -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;\n      -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;\n      transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;\n      letter-spacing: 1px;\n      border-bottom: none;\n      background: transparent; }\n      #mainNav.navbar-shrink {\n        padding-top: 10px;\n        padding-bottom: 10px;\n        border-bottom: 1px solid rgba(255, 255, 255, 0.3);\n        background: black; }\n      #mainNav .nav-link.active {\n        outline: none;\n        background-color: rgba(255, 255, 255, 0.3); }\n        #mainNav .nav-link.active:hover {\n          color: white; } }\n\n.masthead {\n  display: table;\n  width: 100%;\n  height: auto;\n  padding: 200px 0;\n  text-align: center;\n  color: white;\n  background: url(" + escape(__webpack_require__(5)) + ") no-repeat bottom center scroll;\n  background-color: black;\n  -webkit-background-size: cover;\n  -moz-background-size: cover;\n  -o-background-size: cover;\n  background-size: cover; }\n  .masthead .intro-body {\n    display: table-cell;\n    vertical-align: middle; }\n    .masthead .intro-body .brand-heading {\n      font-size: 50px; }\n    .masthead .intro-body .intro-text {\n      font-size: 18px; }\n  @media (min-width: 768px) {\n    .masthead {\n      height: 100%;\n      padding: 0; }\n      .masthead .intro-body .brand-heading {\n        font-size: 100px; }\n      .masthead .intro-body .intro-text {\n        font-size: 22px; } }\n\n.btn-circle {\n  font-size: 26px;\n  width: 55px;\n  height: 55px;\n  margin-top: 15px;\n  line-height: 45px;\n  -webkit-transition: background 0.3s ease-in-out;\n  -moz-transition: background 0.3s ease-in-out;\n  transition: background 0.3s ease-in-out;\n  color: white;\n  border: 2px solid white;\n  border-radius: 100% !important;\n  background: transparent; }\n  .btn-circle:focus, .btn-circle:hover {\n    color: white;\n    outline: none;\n    background: rgba(255, 255, 255, 0.1); }\n\n.content-section {\n  padding-top: 150px;\n  padding-bottom: 150px; }\n\n.download-section {\n  color: white;\n  background: url(" + escape(__webpack_require__(6)) + ") no-repeat center center scroll;\n  background-color: black;\n  -webkit-background-size: cover;\n  -moz-background-size: cover;\n  -o-background-size: cover;\n  background-size: cover; }\n\n#map {\n  width: 100%;\n  height: 300px; }\n\n@media (min-width: 992px) {\n  .content-section {\n    padding-top: 200px;\n    padding-bottom: 200px; }\n  #map {\n    height: 350px; } }\n\n.btn {\n  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: 400;\n  -webkit-transition: all 0.3s ease-in-out;\n  -moz-transition: all 0.3s ease-in-out;\n  transition: all 0.3s ease-in-out;\n  text-transform: uppercase;\n  border-radius: 0; }\n\n.btn-default {\n  color: #42DCA3;\n  border: 1px solid #42DCA3;\n  background-color: transparent; }\n  .btn-default:focus, .btn-default:hover {\n    color: black;\n    border: 1px solid #42DCA3;\n    outline: none;\n    background-color: #42DCA3; }\n\nul.banner-social-buttons {\n  margin-top: 0; }\n  @media (max-width: 1199px) {\n    ul.banner-social-buttons {\n      margin-top: 15px; } }\n  @media (max-width: 767px) {\n    ul.banner-social-buttons li {\n      display: block;\n      margin-bottom: 20px;\n      padding: 0; }\n      ul.banner-social-buttons li:last-child {\n        margin-bottom: 0; } }\n\nfooter {\n  padding: 50px 0; }\n  footer p {\n    font-size: 14px;\n    margin: 0; }\n\n::-moz-selection {\n  background: #fcfcfc;\n  background: rgba(255, 255, 255, 0.2);\n  text-shadow: none; }\n\n::selection {\n  background: #fcfcfc;\n  background: rgba(255, 255, 255, 0.2);\n  text-shadow: none; }\n\nimg::selection {\n  background: transparent; }\n\nimg::-moz-selection {\n  background: transparent; }\n", ""]);
+exports.push([module.i, "\n", ""]);
 
 // exports
 
 
 /***/ }),
 /* 3 */
-/***/ (function(module, exports) {
-
-module.exports = function escape(url) {
-    if (typeof url !== 'string') {
-        return url
-    }
-    // If url is already wrapped in quotes, remove them
-    if (/^['"].*['"]$/.test(url)) {
-        url = url.slice(1, -1);
-    }
-    // Should url be wrapped?
-    // See https://drafts.csswg.org/css-values-3/#urls
-    if (/["'() \t\n]/.test(url)) {
-        return '"' + url.replace(/"/g, '\\"').replace(/\n/g, '\\n') + '"'
-    }
-
-    return url
-}
-
-
-/***/ }),
-/* 4 */
 /***/ (function(module, exports) {
 
 /*
@@ -244,19 +225,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 5 */
-/***/ (function(module, exports) {
-
-throw new Error("Module parse failed: Unexpected character '�' (1:0)\nYou may need an appropriate loader to handle this file type.\n(Source code omitted for this binary file)");
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports) {
-
-throw new Error("Module parse failed: Unexpected character '�' (1:0)\nYou may need an appropriate loader to handle this file type.\n(Source code omitted for this binary file)");
-
-/***/ }),
-/* 7 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -322,7 +291,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(8);
+var	fixUrls = __webpack_require__(5);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -638,7 +607,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 8 */
+/* 5 */
 /***/ (function(module, exports) {
 
 
@@ -730,6 +699,206 @@ module.exports = function (css) {
 	// send back the fixed css
 	return fixedCss;
 };
+
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+(function($) {
+  "use strict"; // Start of use strict
+
+  // Smooth scrolling using jQuery easing
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: (target.offset().top - 48)
+        }, 1000, "easeInOutExpo");
+        return false;
+      }
+    }
+  });
+
+  // Closes responsive menu when a scroll trigger link is clicked
+  $('.js-scroll-trigger').click(function() {
+    $('.navbar-collapse').collapse('hide');
+  });
+
+  // Activate scrollspy to add active class to navbar items on scroll
+  $('body').scrollspy({
+    target: '#mainNav',
+    offset: 54
+  });
+
+  // Collapse Navbar
+  var navbarCollapse = function() {
+    if ($("#mainNav").offset().top > 100) {
+      $("#mainNav").addClass("navbar-shrink");
+    } else {
+      $("#mainNav").removeClass("navbar-shrink");
+    }
+  };
+  // Collapse now if page is not at top
+  navbarCollapse();
+  // Collapse the navbar when page is scrolled
+  $(window).scroll(navbarCollapse);
+
+})(jQuery); // End of use strict
+
+// Google Maps Scripts
+var map = null;
+// When the window has finished loading create our google map below
+google.maps.event.addDomListener(window, 'load', init);
+google.maps.event.addDomListener(window, 'resize', function() {
+  map.setCenter(new google.maps.LatLng(40.6700, -73.9400));
+});
+
+function init() {
+  // Basic options for a simple Google Map
+  // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+  var mapOptions = {
+    // How zoomed in you want the map to start at (always required)
+    zoom: 15,
+
+    // The latitude and longitude to center the map (always required)
+    center: new google.maps.LatLng(40.6700, -73.9400), // New York
+
+    // Disables the default Google Maps UI components
+    disableDefaultUI: true,
+    scrollwheel: false,
+    draggable: false,
+
+    // How you would like to style the map.
+    // This is where you would paste any style found on Snazzy Maps.
+    styles: [{
+      "featureType": "water",
+      "elementType": "geometry",
+      "stylers": [{
+        "color": "#000000"
+      }, {
+        "lightness": 17
+      }]
+    }, {
+      "featureType": "landscape",
+      "elementType": "geometry",
+      "stylers": [{
+        "color": "#000000"
+      }, {
+        "lightness": 20
+      }]
+    }, {
+      "featureType": "road.highway",
+      "elementType": "geometry.fill",
+      "stylers": [{
+        "color": "#000000"
+      }, {
+        "lightness": 17
+      }]
+    }, {
+      "featureType": "road.highway",
+      "elementType": "geometry.stroke",
+      "stylers": [{
+        "color": "#000000"
+      }, {
+        "lightness": 29
+      }, {
+        "weight": 0.2
+      }]
+    }, {
+      "featureType": "road.arterial",
+      "elementType": "geometry",
+      "stylers": [{
+        "color": "#000000"
+      }, {
+        "lightness": 18
+      }]
+    }, {
+      "featureType": "road.local",
+      "elementType": "geometry",
+      "stylers": [{
+        "color": "#000000"
+      }, {
+        "lightness": 16
+      }]
+    }, {
+      "featureType": "poi",
+      "elementType": "geometry",
+      "stylers": [{
+        "color": "#000000"
+      }, {
+        "lightness": 21
+      }]
+    }, {
+      "elementType": "labels.text.stroke",
+      "stylers": [{
+        "visibility": "on"
+      }, {
+        "color": "#000000"
+      }, {
+        "lightness": 16
+      }]
+    }, {
+      "elementType": "labels.text.fill",
+      "stylers": [{
+        "saturation": 36
+      }, {
+        "color": "#000000"
+      }, {
+        "lightness": 40
+      }]
+    }, {
+      "elementType": "labels.icon",
+      "stylers": [{
+        "visibility": "off"
+      }]
+    }, {
+      "featureType": "transit",
+      "elementType": "geometry",
+      "stylers": [{
+        "color": "#000000"
+      }, {
+        "lightness": 19
+      }]
+    }, {
+      "featureType": "administrative",
+      "elementType": "geometry.fill",
+      "stylers": [{
+        "color": "#000000"
+      }, {
+        "lightness": 20
+      }]
+    }, {
+      "featureType": "administrative",
+      "elementType": "geometry.stroke",
+      "stylers": [{
+        "color": "#000000"
+      }, {
+        "lightness": 17
+      }, {
+        "weight": 1.2
+      }]
+    }]
+  };
+
+  // Get the HTML DOM element that will contain your map
+  // We are using a div with id="map" seen below in the <body>
+  var mapElement = document.getElementById('map');
+
+  // Create the Google Map using out element and options defined above
+  map = new google.maps.Map(mapElement, mapOptions);
+
+  // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
+  var image = 'img/map-marker.svg';
+  var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
+  var beachMarker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    icon: image
+  });
+}
 
 
 /***/ })

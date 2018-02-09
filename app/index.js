@@ -1,1 +1,4 @@
-import 'startbootstrap-grayscale/scss/grayscale.scss';
+import './styles.scss';
+import 'startbootstrap-grayscale/js/grayscale.js';
+
+console.log('hello world');
