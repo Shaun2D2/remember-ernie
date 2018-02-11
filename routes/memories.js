@@ -8,7 +8,7 @@ const url = process.env.MONGODB_URI;
 
 // Database Name
 const dbName = process.env.MONGODB_NAME;
-
+console.log([url, dbName]);
 /* GET users listing. */
 router.get('/', function(req, res, next) {
 
