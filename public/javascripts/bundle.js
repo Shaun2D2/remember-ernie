@@ -1003,10 +1003,10 @@ var Memories = function (_Component) {
                     { className: 'row' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'col-lg-12 text-center' },
+                        { className: 'col-lg-12' },
                         _react2.default.createElement(
                             'h2',
-                            null,
+                            { className: 'text-center' },
                             'Memories & Goodbyes'
                         ),
                         _react2.default.createElement(

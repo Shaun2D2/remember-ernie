@@ -28,8 +28,8 @@ class Memories extends Component {
         return (
             <section id="memories" className="container content-section">
                 <div className="row">
-                    <div className="col-lg-12 text-center">
-                        <h2>Memories & Goodbyes</h2>
+                    <div className="col-lg-12">
+                        <h2 className="text-center">Memories & Goodbyes</h2>
                         <div className="row">
                             {this.state.memories.map((memory, index) => (                          
                                 <div className="col-lg-4 col-md-4 col-sm-6" key={index}>
