@@ -30,16 +30,16 @@ class Memories extends Component {
                 <div className="row">
                     <div className="col-lg-12 text-center">
                         <h2>Memories & Goodbyes</h2>
-                        {this.state.memories.map((memory, index) => (                          
-                            <div className="row" key={index}>
-                              <div className="col-lg-4 col-md-4 col-sm-6">
-                                <blockquote className="blockquote-summary">
-                                  {memory.body}
-                                  <footer style={{ padding: 0, textAlign: 'left' }}> {memory.name}</footer>
-                                </blockquote>
-                              </div>
-                            </div>
-                        ))}
+                        <div className="row">
+                            {this.state.memories.map((memory, index) => (                          
+                                <div className="col-lg-4 col-md-4 col-sm-6" key={index}>
+                                    <blockquote className="blockquote-summary">
+                                        {memory.body}
+                                        <footer style={{ padding: 0, textAlign: 'left' }}> {memory.name}</footer>
+                                    </blockquote>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>

@@ -1009,13 +1009,13 @@ var Memories = function (_Component) {
                             null,
                             'Memories & Goodbyes'
                         ),
-                        this.state.memories.map(function (memory, index) {
-                            return _react2.default.createElement(
-                                'div',
-                                { className: 'row', key: index },
-                                _react2.default.createElement(
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'row' },
+                            this.state.memories.map(function (memory, index) {
+                                return _react2.default.createElement(
                                     'div',
-                                    { className: 'col-lg-4 col-md-4 col-sm-6' },
+                                    { className: 'col-lg-4 col-md-4 col-sm-6', key: index },
                                     _react2.default.createElement(
                                         'blockquote',
                                         { className: 'blockquote-summary' },
@@ -1027,9 +1027,9 @@ var Memories = function (_Component) {
                                             memory.name
                                         )
                                     )
-                                )
-                            );
-                        })
+                                );
+                            })
+                        )
                     )
                 )
             );
